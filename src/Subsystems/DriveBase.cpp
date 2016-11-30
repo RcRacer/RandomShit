@@ -46,5 +46,5 @@ void DriveBase::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void DriveBase::driveWithJoysticks() {
-
+	robotDrive->TankDrive(Robot::oi->getLeft_Joystick()->GetY(),Robot::oi->getRight_Joystick()->GetY());
 }
